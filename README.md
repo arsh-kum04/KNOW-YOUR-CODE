@@ -44,7 +44,8 @@ git clone https://github.com/your_username/know-your-code.git
 ```
 
 ##### Install dependencies:
-```pip install -r requirements.txt
+```
+pip install -r requirements.txt
 ```
 ##### Set up environment variables:
 Create a .env file in the root directory and add your API keys and tokens:
