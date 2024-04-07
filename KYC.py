@@ -294,7 +294,7 @@ def main():
     page = st.sidebar.selectbox("Select Page", ["Code Documentation Generator", "Gemini Chat"])
 
     if page == "Code Documentation Generator":
-        st.subheader("Code Documentation Generator")
+        st.subheader("Code Documentation Commit")
 
         username = st.text_input("Enter GitHub Username:", "")
         if username:
@@ -304,7 +304,7 @@ def main():
                 selected_repo = next((repo for repo in repositories if repo["name"] == selected_repo_name), None)
                 if selected_repo:
                     st.write(f"You selected: {selected_repo_name}")
-                    if st.button("Fetch Repository Data and Generate PDF"):
+                    if st.button("Generate Documentation and Commit on Github"):
                         repoLink = f"https://github.com/{username}/{selected_repo_name}"
                         generate_pdf_documentation(username, repoLink)
                         st.success("PDF generated successfully.")
@@ -324,6 +324,7 @@ def main():
                     text_chunks = generate_text_chunks(raw_text)
                     generate_vector_store(text_chunks)
                     st.success("Done")
+
 
 if __name__ == "__main__":
     main()
