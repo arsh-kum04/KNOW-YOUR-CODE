@@ -4,4 +4,5 @@ python-dotenv
 langchain
 PyPDF2
 faiss-cpu
+FPDF
 langchain_google_genai
