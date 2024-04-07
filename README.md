@@ -51,8 +51,8 @@ pip install -r requirements.txt
 Create a .env file in the root directory and add your API keys and tokens:
 
 ```
-GOOGLE_API_KEY=your_google_api_key
-TOKEN_BEARER=your_github_token_bearer
+GOOGLE_API_KEY="your_google_api_key"
+TOKEN_BEARER="your_github_token_bearer"
 ```
 Run the application:
 ```
