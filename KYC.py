@@ -260,7 +260,7 @@ def generate_pdf(username, repo_name, code):
     pdf.set_font("Arial", size=12)
     for line in code.split('\n'):
         pdf.cell(200, 10, txt=line, ln=True)
-    pdf.output(f"{username}_{repo_name}_code.pdf")
+    return pdf
 
 def generate_pdf_doc(username,code):
     pdf = FPDF()
@@ -281,7 +281,12 @@ def generate_pdf_documentation(username, selected_repo):
 
         contents = fetch_code_contents(repo['url'] + '/contents')
         code = get_code_structure(contents, username, repo['name'])
-        generate_pdf(username, repo['name'], code)
+        pdf=generate_pdf(username, repo['name'], code)
+        st.download_button(
+        label="Download PDF",
+        data=pdf.output(dest='S').encode('latin1'),
+        file_name=f"{username}_{repo['name']}_code.pdf",
+        mime='application/pdf')
 
         print(f"PDF '{username}_{repo['name']}_code_documentation.pdf' generated successfully.")
     except Exception as e:
