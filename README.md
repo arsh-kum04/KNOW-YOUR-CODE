@@ -1,6 +1,6 @@
 # KNOW-YOUR-CODE
 Know Your Code is a web application designed to assist developers in understanding and documenting large codebases easily. It leverages advanced AI capabilities to provide detailed explanations and documentation for code snippets, helping developers navigate complex code with clarity and efficiency.
-Here is the Working Demonstration Video of KYC : [CLICK ME ;)]([https://drive.google.com/file/d/1KIlXqEG_BlFicn3GxeB-6n4K5C18tIVG/view?usp=sharing](https://youtu.be/ND8tCdPV4yE))
+Here is the Working Demonstration Video of KYC : [CLICK ME ;)]([https://youtu.be/ND8tCdPV4yE])
 
 # Problem Statement
 When developers join new organizations or work on unfamiliar codebases, understanding and modifying the code can be challenging, especially without proper documentation. Reading large, complex, and undocumented codebases consumes a significant amount of time and hinders productivity. Know Your Code aims to address this problem by providing automated code documentation and explanations, streamlining the development workflow.
