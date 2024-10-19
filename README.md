@@ -3,8 +3,7 @@ Know Your Code is a web application designed to assist developers in understandi
 Here is the Working Demonstration Video of KYC : [CLICK ME ;)](https://youtu.be/ND8tCdPV4yE)
 
 LIVE : http://know-your-code.onrender.com/
-
-Wait for few Sec...
+Update(Live site is halted for now!!,You can watch our demo video.Thank You!)
 
 # Problem Statement
 When developers join new organizations or work on unfamiliar codebases, understanding and modifying the code can be challenging, especially without proper documentation. Reading large, complex, and undocumented codebases consumes a significant amount of time and hinders productivity. Know Your Code aims to address this problem by providing automated code documentation and explanations, streamlining the development workflow.
